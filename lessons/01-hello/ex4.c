@@ -2,5 +2,5 @@
 
 int main(void) {
     printf("Один\tДва\tТри\nОдин\tДва\tТри\nОдин\tДва\tТри\n");
-    return 7;
+    return 0;
 }
