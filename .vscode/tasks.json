@@ -30,6 +30,27 @@
         "clear": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Build (no warnings)",
+      "type": "process",
+      "command": "gcc",
+      "args": ["-g", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"],
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Build (-O2)",
+      "type": "process",
+      "command": "gcc",
+      "args": ["-Wall", "-Wextra", "-O2", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"],
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run only",
+      "type": "process",
+      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "presentation": { "reveal": "always", "focus": true, "clear": true },
+      "problemMatcher": []
     }
   ]
 }
